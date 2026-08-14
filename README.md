@@ -1,21 +1,18 @@
 # dotfiles
 
-Personal configuration files managed with GNU Stow.
+Personal configuration files for Isla Park (DevOps, Austin, TX).
 
 ## Contents
 
-- `bash/` – Bash aliases and prompt
-- `git/` – Git config and aliases
-- `vim/` – Vim settings
-- `scripts/` – Utility scripts
+- Shell: `.bashrc`, `.zshrc`
+- Git: `.gitconfig`, `.gitignore_global`
+- Tools: `tmux.conf`, `vimrc`
 
-## Install
+## Setup
 
-```bash
-cd ~/dotfiles
-stow bash git vim scripts
-```
+Clone and symlink manually, or run `install.sh` (if present).
 
 ## Notes
 
-See `docs/` for setup details and troubleshooting.
+- Keep secrets out of tracked files — use `~/.secrets` instead.
+- Updated regularly; see commit history for changes.
